@@ -1,0 +1,21 @@
+name: "Price Watch"
+version: "0.1.0"
+slug: "price_watch"
+description: "Private price and stock monitoring service for Home Assistant."
+url: "https://github.com/carl09/price-watch-addons"
+startup: application
+boot: auto
+arch:
+  - amd64
+  - aarch64
+image: "ghcr.io/carl09/price-watch-app"
+ports:
+  8787/tcp: 8787
+ports_description:
+  8787/tcp: "Price Watch API"
+options:
+  api_token: null
+  port: 8787
+schema:
+  api_token: password
+  port: port
