@@ -1,3 +1,8 @@
+## 0.1.3
+
+- Add local API-backed cached product images required by Price Watch integration 0.0.7.
+- Add clearer per-watch Home Assistant Device labels.
+
 ## 0.1.2
 
 - Render Home Assistant App logs as human-readable text with ANSI log-level
