@@ -1,3 +1,7 @@
+## 0.1.4
+
+- Fix App image metadata so Home Assistant Supervisor resolves the versioned image correctly.
+
 ## 0.1.3
 
 - Add local API-backed cached product images required by Price Watch integration 0.0.7.
