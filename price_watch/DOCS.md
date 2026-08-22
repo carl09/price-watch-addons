@@ -17,6 +17,27 @@ The token is not displayed after you save the App configuration. Keep a copy in 
 
 The integration validates the authenticated `/v1/health` endpoint during setup.
 
+## Schedule a daily check
+
+After the integration is connected, create a Home Assistant automation to call
+`price_watch.check_all`. For a daily 8:00am check:
+
+```yaml
+id: price_watch_daily_check
+alias: Price Watch — daily check
+description: Runs all Price Watch checks every day at 8:00am.
+mode: single
+triggers:
+  - trigger: time
+    at: "08:00:00"
+conditions: []
+actions:
+  - action: price_watch.check_all
+```
+
+The automation uses the integration's stored config-entry token; do not put an
+API token in automation YAML.
+
 ## Data and backup
 
 Price Watch data is stored at `/data/price-watch.sqlite` inside the App's persistent storage. Include Home Assistant App data in your regular Home Assistant backup routine.
