@@ -1,9 +1,16 @@
+## 0.1.2
+
+- Render Home Assistant App logs as human-readable text with ANSI log-level
+  colours instead of default JSON output.
+- Retain JSON logging as an explicit `PRICE_WATCH_LOG_FORMAT=json` opt-in for
+  external log collectors and diagnostics.
+
 # Changelog
 
 ## 0.1.1
 
-- Add structured startup, request, and error logs to the Home Assistant App log view.
-- Redact API Authorization headers from logs.
+- Emit structured startup, request, and error logs to Home Assistant App logs.
+- Redact HTTP Authorization headers from logs.
 
 ## 0.1.0
 

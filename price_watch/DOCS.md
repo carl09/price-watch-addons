@@ -38,6 +38,17 @@ actions:
 The automation uses the integration's stored config-entry token; do not put an
 API token in automation YAML.
 
+## Logs
+
+The App writes readable, timestamped text logs to the Home Assistant App log
+viewer. Log levels use standard ANSI colours when the viewer supports them:
+info is green, warnings are yellow, and errors are red. Authorization headers
+remain redacted.
+
+For an external log collector that requires structured output, set
+`PRICE_WATCH_LOG_FORMAT=json` in that deployment environment. The Home
+Assistant App defaults to readable coloured text.
+
 ## Data and backup
 
 Price Watch data is stored at `/data/price-watch.sqlite` inside the App's persistent storage. Include Home Assistant App data in your regular Home Assistant backup routine.
