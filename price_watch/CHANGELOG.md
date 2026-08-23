@@ -1,3 +1,7 @@
+## 0.1.7
+
+- Preserve the integration request ID in App lifecycle logs for correlated diagnostics.
+
 ## 0.1.6
 
 - Preserve valid Home Assistant integration request IDs in App lifecycle logs,
