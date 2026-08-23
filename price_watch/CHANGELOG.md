@@ -1,3 +1,8 @@
+## 0.1.6
+
+- Preserve valid Home Assistant integration request IDs in App lifecycle logs,
+  making cross-component diagnostics directly traceable.
+
 ## 0.1.5
 
 - Add safe, configurable App log levels for temporary diagnostics.
