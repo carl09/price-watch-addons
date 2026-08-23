@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.1.4"
+version: "0.1.5"
 slug: "price_watch"
 description: "Private price and stock monitoring service for Home Assistant."
 url: "https://github.com/carl09/price-watch-addons"
@@ -16,6 +16,8 @@ ports_description:
 options:
   api_token: null
   port: 8787
+  log_level: info
 schema:
   api_token: password
   port: port
+  log_level: list(trace|debug|info|warn|error)

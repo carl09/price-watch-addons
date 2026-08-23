@@ -1,3 +1,8 @@
+## 0.1.5
+
+- Add safe, configurable App log levels for temporary diagnostics.
+- Publish the observability service image with request-ID correlation.
+
 ## 0.1.4
 
 - Fix App image metadata so Home Assistant Supervisor resolves the versioned image correctly.
