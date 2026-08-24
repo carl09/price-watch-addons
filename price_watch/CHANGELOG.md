@@ -1,3 +1,7 @@
+## 0.1.11
+
+- Correct the Home Assistant schema type for the opt-in Lorna Jane shadow-reporting option so repository refresh and App updates validate successfully.
+
 ## 0.1.10
 
 - Add an opt-in Lorna Jane contract shadow-reporting App option, disabled by default.
