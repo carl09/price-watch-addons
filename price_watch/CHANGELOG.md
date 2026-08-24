@@ -1,3 +1,11 @@
+## 0.1.14
+
+- Add a default-disabled, authenticated operator-only Elite Eleven one-shot
+  shadow-proof endpoint for a controlled legacy-versus-contract comparison.
+- The proof is non-persistent and diagnostic-only: it creates no watch,
+  observation, event, notification, image cache, scheduler entry, retailer
+  registration, or Home Assistant entity; legacy results remain authoritative.
+
 ## 0.1.13
 
 - Add the opt-in Elite Eleven shadow-reporting App option, disabled by default.

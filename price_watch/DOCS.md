@@ -8,7 +8,15 @@ This App runs the Price Watch service inside Home Assistant and stores its SQLit
 - **Port** — defaults to `8787`. Change it only if the port is already in use on your Home Assistant host.
 - **Log level** — defaults to `info`. Use `debug` temporarily while diagnosing a connection or check failure; return it to `info` afterward.
 - **Lorna Jane contract shadow reporting** — disabled by default. Enable it only for a controlled evidence-gathering period. It compares the existing Lorna Jane result with a candidate contract and writes only safe match/mismatch outcome codes and totals to App logs; legacy monitoring remains authoritative. Disable it again after the review.
-- **Elite Eleven shadow reporting** — disabled by default. This is shadow-only diagnostic reporting; legacy monitoring remains authoritative. Enable it only for a controlled review, then disable it again.
+- **Elite Eleven shadow proof** — disabled by default and not general Elite
+  Eleven monitoring. When an explicitly approved operator proof is required,
+  it permits exactly one authenticated
+  `POST /v1/operator/elite-eleven/shadow-proof` comparison for a canonical
+  product URL and exact variant selector. It creates no watch, observation,
+  event, notification, image cache, scheduler entry, retailer registration, or
+  Home Assistant entity. The legacy result stays authoritative. After review,
+  set `elite_eleven_shadow_enabled` back to `false` and restart the App through
+  the normal operator process.
 
 The token is not displayed after you save the App configuration. Keep a copy in your password manager.
 
@@ -51,6 +59,13 @@ remain redacted.
 For an external log collector that requires structured output, set
 `PRICE_WATCH_LOG_FORMAT=json` in that deployment environment. The Home
 Assistant App defaults to readable coloured text.
+
+When the Elite Eleven proof option is enabled, the proof endpoint logs and
+returns only its operation, retailer ID, process-local check-run ID, bounded
+outcome/failure codes, and in-memory totals. It never logs product URLs,
+titles, prices, labels, images, payloads, tokens, watch IDs, or resolved
+addresses. The option remains disabled by default; a false setting plus an App
+restart is the exact rollback.
 
 ## Data and backup
 
