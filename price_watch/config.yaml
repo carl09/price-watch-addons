@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.1.12"
+version: "0.1.13"
 slug: "price_watch"
 description: "Private price and stock monitoring service for Home Assistant."
 url: "https://github.com/carl09/price-watch-addons"
@@ -18,8 +18,10 @@ options:
   port: 8787
   log_level: info
   lorna_jane_shadow_enabled: false
+  elite_eleven_shadow_enabled: false
 schema:
   api_token: password
   port: port
   log_level: list(trace|debug|info|warn|error)
   lorna_jane_shadow_enabled: bool
+  elite_eleven_shadow_enabled: bool

@@ -1,3 +1,8 @@
+## 0.1.13
+
+- Add the opt-in Elite Eleven shadow-reporting App option, disabled by default.
+- Elite Eleven shadow reporting is diagnostic-only; legacy monitoring remains authoritative.
+
 ## 0.1.12
 
 - Add safe per-check `check_run_id` shadow-log correlation for diagnostics.
