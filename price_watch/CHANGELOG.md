@@ -1,3 +1,12 @@
+## 0.1.8
+
+- Add a SQLite-native operator backup command that takes a consistent snapshot.
+- Add isolated restore verification for watches, latest valid observations, and
+  event deduplication evidence.
+- Reject unsafe or malformed backup/restore command arguments before database
+  activity. This release does not add automatic backup scheduling or a
+  production restore command.
+
 ## 0.1.7
 
 - Preserve the integration request ID in App lifecycle logs for correlated diagnostics.
