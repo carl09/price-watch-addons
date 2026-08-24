@@ -1,3 +1,7 @@
+## 0.1.12
+
+- Add safe per-check `check_run_id` shadow-log correlation for diagnostics.
+
 ## 0.1.11
 
 - Correct the Home Assistant schema type for the opt-in Lorna Jane shadow-reporting option so repository refresh and App updates validate successfully.
