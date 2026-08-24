@@ -1,3 +1,8 @@
+## 0.1.9
+
+- Fix monitor-health failure counting so Home Assistant can show a failed check
+  and then recover after a later successful check.
+
 ## 0.1.8
 
 - Add a SQLite-native operator backup command that takes a consistent snapshot.
