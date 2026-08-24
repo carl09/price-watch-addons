@@ -10,9 +10,9 @@ This App runs the Price Watch service inside Home Assistant and stores its SQLit
 - **Lorna Jane contract shadow reporting** — disabled by default. Enable it only for a controlled evidence-gathering period. It compares the existing Lorna Jane result with a candidate contract and writes only safe match/mismatch outcome codes and totals to App logs; legacy monitoring remains authoritative. Disable it again after the review.
 - **Elite Eleven shadow proof** — disabled by default and not general Elite
   Eleven monitoring. An explicitly approved one-shot proof remains
-  shadow-only and can return bounded acquisition diagnostics; legacy monitoring
-  remains authoritative. Disable it again after review and restart the App
-  through the normal operator process.
+  shadow-only and can return bounded non-success HTTP diagnostics; legacy
+  monitoring remains authoritative. Disable it again after review and restart
+  the App through the normal operator process.
 
 The token is not displayed after you save the App configuration. Keep a copy in your password manager.
 

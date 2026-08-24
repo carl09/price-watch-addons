@@ -1,3 +1,7 @@
+## 0.1.16
+
+- Elite Eleven’s default-disabled, shadow-only one-shot diagnostic proof now returns bounded non-success HTTP diagnostics. Legacy monitoring remains authoritative.
+
 ## 0.1.15
 
 - Preserve bounded Elite Eleven shadow-proof acquisition diagnostics. The one-shot proof remains disabled by default and shadow-only; legacy monitoring remains authoritative.
