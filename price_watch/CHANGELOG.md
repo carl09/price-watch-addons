@@ -1,3 +1,7 @@
+## 0.1.15
+
+- Preserve bounded Elite Eleven shadow-proof acquisition diagnostics. The one-shot proof remains disabled by default and shadow-only; legacy monitoring remains authoritative.
+
 ## 0.1.14
 
 - Add a default-disabled, authenticated operator-only Elite Eleven one-shot
