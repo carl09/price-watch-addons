@@ -6,6 +6,8 @@ This App runs the Price Watch service inside Home Assistant and stores its SQLit
 
 - **API token** — required. Create a long, random secret. The Home Assistant integration uses this same value to authenticate to the service.
 - **Port** — defaults to `8787`. Change it only if the port is already in use on your Home Assistant host.
+- **Log level** — defaults to `info`. Use `debug` temporarily while diagnosing a connection or check failure; return it to `info` afterward.
+- **Lorna Jane contract shadow reporting** — disabled by default. Enable it only for a controlled evidence-gathering period. It compares the existing Lorna Jane result with a candidate contract and writes only safe match/mismatch outcome codes and totals to App logs; legacy monitoring remains authoritative. Disable it again after the review.
 
 The token is not displayed after you save the App configuration. Keep a copy in your password manager.
 

@@ -1,3 +1,8 @@
+## 0.1.10
+
+- Add an opt-in Lorna Jane contract shadow-reporting App option, disabled by default.
+- Shadow reporting logs only safe match/mismatch outcome codes and in-memory totals; legacy monitoring remains authoritative.
+
 ## 0.1.9
 
 - Fix monitor-health failure counting so Home Assistant can show a failed check
