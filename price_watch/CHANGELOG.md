@@ -1,3 +1,10 @@
+## 0.1.18
+
+- Remove the obsolete Elite Eleven shadow-proof App option, schema, and
+  operator documentation after the private source moved Elite Eleven to a
+  contract-only implementation. Lorna Jane shadow reporting remains available
+  and disabled by default.
+
 ## 0.1.17
 
 - Add safe structured acquisition exception diagnostics only. These bounded,
