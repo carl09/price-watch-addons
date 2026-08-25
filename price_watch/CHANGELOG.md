@@ -1,3 +1,12 @@
+## 0.1.19
+
+- Register deterministic Shopify Product JSON adapters for the approved Elite
+  Eleven and Alo Yoga product URLs. Checks use exact host, path, and
+  variant-contract validation with bounded HTTPS acquisition; no browser, LLM,
+  operator-proof endpoint, or new Home Assistant controls are added.
+- Existing Lorna Jane monitoring and its disabled-by-default shadow reporting
+  remain unchanged.
+
 ## 0.1.18
 
 - Remove the obsolete Elite Eleven shadow-proof App option, schema, and
