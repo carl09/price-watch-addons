@@ -1,3 +1,10 @@
+## 0.1.17
+
+- Add safe structured acquisition exception diagnostics only. These bounded,
+  shadow-only logs do not change monitoring behaviour, watches, observations,
+  events, notifications, scheduling, retailer registration, or Home Assistant
+  entities; legacy monitoring remains authoritative.
+
 ## 0.1.16
 
 - Elite Eleven’s default-disabled, shadow-only one-shot diagnostic proof now returns bounded non-success HTTP diagnostics. Legacy monitoring remains authoritative.
