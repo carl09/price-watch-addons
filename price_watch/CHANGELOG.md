@@ -1,3 +1,9 @@
+## 0.1.20
+
+- Add the authenticated retailer operational API for bounded retailer state,
+  diagnostics, and recovery operations.
+- Keep Home Assistant configuration and existing monitoring behaviour unchanged.
+
 ## 0.1.19
 
 - Register deterministic Shopify Product JSON adapters for the approved Elite
