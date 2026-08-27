@@ -1,10 +1,3 @@
-## 0.1.21
-
-- Add authenticated, read-only price-movement reporting for observed price drops
-  and rises over rolling day and week windows.
-- Keep existing Home Assistant configuration, checks, target events, and
-  notifications unchanged.
-
 ## 0.1.20
 
 - Add the authenticated retailer operational API for bounded retailer state,
