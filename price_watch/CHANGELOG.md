@@ -1,3 +1,9 @@
+## 0.1.22
+
+- Fix deterministic retailer-onboarding replay validation so every declared fixture
+  expectation must pass before a static handoff can be marked ready.
+- Existing Home Assistant configuration and monitoring behaviour remain unchanged.
+
 ## 0.1.21
 
 - Add authenticated, read-only price-movement reporting for observed price drops
