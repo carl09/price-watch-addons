@@ -1,3 +1,10 @@
+## 0.1.23
+
+- Complete the Home Assistant-facing service contract for durable watch state,
+  retailer operations, and deterministic current-status responses.
+- Existing App configuration remains unchanged; Home Assistant integration and
+  dashboard updates are released separately.
+
 ## 0.1.22
 
 - Fix deterministic retailer-onboarding replay validation so every declared fixture
