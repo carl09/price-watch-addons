@@ -1,3 +1,9 @@
+## 0.1.25
+
+- Add Home Assistant actions for individual watch checks and safe product-image
+  retries, with resilient image-cache handling.
+- Existing App configuration remains unchanged.
+
 ## 0.1.24
 
 - Harden Home Assistant-facing image API validation and response handling for safer,
