@@ -49,6 +49,12 @@ actions:
 The automation uses the integration's stored config-entry token; do not put an
 API token in automation YAML.
 
+The integration also exposes per-watch `Enabled` switches, a `Target price
+control` NumberEntity, `price_watch.set_target_price`, and the local-only
+`price_watch.reload_image` action. Target-price and enablement changes update
+configuration only; they do not run checks or create observations, events, or
+alerts. Image reload invalidates only the selected watch's HA image cache.
+
 ## Logs
 
 The App writes readable, timestamped text logs to the Home Assistant App log
