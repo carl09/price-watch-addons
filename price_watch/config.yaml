@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.1.22"
+version: "0.1.23"
 slug: "price_watch"
 description: "Private price and stock monitoring service for Home Assistant."
 url: "https://github.com/carl09/price-watch-addons"
