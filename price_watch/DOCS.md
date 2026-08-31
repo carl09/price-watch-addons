@@ -17,6 +17,15 @@ The token is not displayed after you save the App configuration. Keep a copy in 
 2. In **Settings → Devices & services → Price Watch**, use the Home Assistant host/IP and the configured port, for example `http://homeassistant.local:8787`.
 3. Enter the same API token configured for this App.
 
+For a local Home Assistant API endpoint, `http://homeassistant.local:8787` is
+allowed. The approved DNS names for HTTP are `homeassistant.local`, `localhost`, and
+the test fixture name `price-watch.test`; IP-literal HTTP destinations remain
+rejected. Hostnames are normalized case-insensitively and with a trailing dot removed;
+arbitrary `.local` names remain rejected. Public/non-local HTTP URLs remain
+rejected; production/non-local
+service deployments must use HTTPS, and retailer product/action URLs are always
+HTTPS.
+
 The integration validates the authenticated `/v1/health` endpoint during setup.
 
 ## Schedule a daily check
