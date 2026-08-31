@@ -1,3 +1,9 @@
+## 0.1.24
+
+- Harden Home Assistant-facing image API validation and response handling for safer,
+  more reliable frontend image updates.
+- Existing App configuration remains unchanged.
+
 ## 0.1.23
 
 - Complete the Home Assistant-facing service contract for durable watch state,
