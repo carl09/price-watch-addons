@@ -1,11 +1,26 @@
 # Price Watch Home Assistant App
 
-This App runs the Price Watch service inside Home Assistant and stores its SQLite database under the App's persistent `/data` directory.
+> **Candidate metadata notice:** App metadata version `0.1.26` is an unreleased
+> ingress/WebUI preparation candidate. This document is not an installation or
+> production-readiness approval. Wait for the matching immutable image and
+> completed ingress evidence.
+
+This App runs the Price Watch service inside Home Assistant and stores its SQLite database under the App's persistent `/data` directory. The candidate metadata enables Supervisor ingress for the embedded WebUI on fixed port `8787` while retaining that port for legacy API clients. No `webui` URL is declared because the official field/ingress launch semantics have not been verified; launch-link behavior is deferred rather than risking an ingress bypass.
 
 ## Configuration
 
-- **API token** — required. Create a long, random secret. The Home Assistant integration uses this same value to authenticate to the service.
-- **Port** — defaults to `8787`. Change it only if the port is already in use on your Home Assistant host.
+- **Supervisor ingress/WebUI** — the App declares ingress on port `8787`. Open
+  the embedded WebUI from the Home Assistant App page; direct App-port static/UI
+  access is not a supported production path. The WebUI uses the Supervisor/App
+  ingress session and does not request, store, or expose the API token.
+- **API token** — required for retained legacy bearer-authenticated `/v1`
+  clients. Create a long, random secret. The Home Assistant integration uses
+  this same value to authenticate to the service. Existing integration/card
+  clients continue using the App host/IP and fixed port `8787`; this candidate
+  does not remove that compatibility path.
+- **Port** — fixed at `8787` in this candidate so the legacy API mapping cannot
+  diverge from `ingress_port`. The configurable port option is intentionally
+  unavailable.
 - **Log level** — defaults to `info`. Use `debug` temporarily while diagnosing a connection or check failure; return it to `info` afterward.
 - **Lorna Jane contract shadow reporting** — disabled by default. Enable it only for a controlled evidence-gathering period. It compares the existing Lorna Jane result with a candidate contract and writes only safe match/mismatch outcome codes and totals to App logs; legacy monitoring remains authoritative. Disable it again after the review.
 
@@ -14,8 +29,11 @@ The token is not displayed after you save the App configuration. Keep a copy in 
 ## Connect the integration
 
 1. Start the App and wait until its log shows that the service is listening.
-2. In **Settings → Devices & services → Price Watch**, use the Home Assistant host/IP and the configured port, for example `http://homeassistant.local:8787`.
-3. Enter the same API token configured for this App.
+2. For retained legacy API clients, use the Home Assistant host/IP and fixed
+   port `8787`, for example `http://homeassistant.local:8787`.
+3. Enter the same API token configured for this App. The embedded WebUI is not
+   documented as a direct host/port URL; use Supervisor ingress only after the
+   runtime ingress proof and official launch semantics are verified.
 
 For a local Home Assistant API endpoint, `http://homeassistant.local:8787` is
 allowed. The approved DNS names for HTTP are `homeassistant.local`, `localhost`, and
@@ -27,6 +45,11 @@ service deployments must use HTTPS, and retailer product/action URLs are always
 HTTPS.
 
 The integration validates the authenticated `/v1/health` endpoint during setup.
+
+The candidate metadata does not claim that ingress source CIDRs, path rewrite,
+`X-Ingress-Path`, canonical origin/CSRF handling, direct-port UI denial, or
+Supervisor/App restart behavior have been verified. Those facts require a
+separate disposable Home Assistant ingress proof before any release.
 
 ## Schedule a daily check
 

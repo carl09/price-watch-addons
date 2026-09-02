@@ -1,3 +1,16 @@
+## 0.1.26 (candidate — not released)
+
+- Prepare schema-shaped Home Assistant Supervisor ingress metadata for the
+  embedded WebUI on fixed port `8787`; the unverified `webui` launch URL field
+  is intentionally omitted to avoid bypassing ingress.
+- Remove the configurable port option so `ingress_port` and the retained legacy
+  bearer-authenticated `/v1` port mapping cannot diverge.
+- Retain port `8787` and the existing API-token configuration for legacy
+  bearer-authenticated `/v1` integration/card clients.
+- No immutable image digest, publication, deployment, or production-readiness
+  claim is included; ingress source, rewrite, prefix, CSRF, direct-port, and
+  restart behavior remain subject to disposable-installation proof.
+
 ## 0.1.25
 
 - Add Home Assistant actions for individual watch checks and safe product-image
