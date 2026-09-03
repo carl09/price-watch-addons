@@ -3,7 +3,7 @@
 Home Assistant App (formerly add-on) repository for the self-hosted **Price Watch** service.
 
 > [!WARNING]
-> **Candidate metadata only:** `0.1.29` is an unreleased ingress/WebUI
+> **Candidate metadata only:** `0.1.30` is an unreleased ingress/WebUI
 > preparation candidate. Do not install it until the matching private service
 > artifact is published, its immutable image digest is recorded, and the
 > disposable Home Assistant ingress proof passes. This repository does not
@@ -19,7 +19,7 @@ Home Assistant App (formerly add-on) repository for the self-hosted **Price Watc
    https://github.com/carl09/price-watch-addons
    ```
 
-4. Refresh the App Store, select **Price Watch**, configure a long random API token, and start it. The `0.1.29` metadata in this checkout is a candidate and is not an installable release.
+4. Refresh the App Store, select **Price Watch**, configure a long random API token, and start it. The `0.1.30` metadata in this checkout is a candidate and is not an installable release.
 5. Add the [Price Watch HACS integration](https://github.com/carl09/price-watch-integration), then configure it with the same API token and the Home Assistant host/IP on port `8787` for the retained legacy `/v1` API contract. Existing integrations do not use the embedded WebUI ingress session.
 
 ## Candidate ingress/WebUI metadata

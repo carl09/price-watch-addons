@@ -1,3 +1,11 @@
+## 0.1.30 (candidate — not released)
+
+- Add English Home Assistant App option names and descriptions for all
+  configuration fields, including visibly non-operational placeholders for
+  target-specific ingress trust values.
+- Keep ingress trust options unset by default; no concrete CIDR or origin is
+  supplied by metadata or translations.
+
 ## 0.1.29 (candidate — not released)
 
 - Add explicit target-specific `ingress_cidrs` and `canonical_origin` App

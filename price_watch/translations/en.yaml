@@ -1,0 +1,16 @@
+configuration:
+  api_token:
+    name: API token
+    description: Token used by retained legacy API clients to authenticate with Price Watch.
+  log_level:
+    name: Log level
+    description: Logging detail for the App. Use debug only while diagnosing a problem, then return to info.
+  lorna_jane_shadow_enabled:
+    name: Lorna Jane shadow comparison
+    description: Enable bounded diagnostic comparison for Lorna Jane. Leave disabled during normal operation.
+  ingress_cidrs:
+    name: Verified ingress proxy CIDRs
+    description: Comma-separated CIDRs for the immediate verified Home Assistant ingress proxy, for example <verified-proxy-CIDR>. Leave unset until measured on this installation.
+  canonical_origin:
+    name: Trusted CSRF origin
+    description: HTTP(S) origin trusted for CSRF checks, for example https://<your-home-assistant-host>. Set together with verified ingress proxy CIDRs; do not guess this value.

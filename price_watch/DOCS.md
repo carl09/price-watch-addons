@@ -1,6 +1,6 @@
 # Price Watch Home Assistant App
 
-> **Candidate metadata notice:** App metadata version `0.1.29` is an unreleased
+> **Candidate metadata notice:** App metadata version `0.1.30` is an unreleased
 > ingress/WebUI preparation candidate. This document is not an installation or
 > production-readiness approval. Wait for the matching immutable image and
 > completed ingress evidence.
@@ -29,6 +29,8 @@ This App runs the Price Watch service inside Home Assistant and stores its SQLit
 - **Canonical origin** — optional, target-specific HTTP(S) origin trusted for
   CSRF protection. Configure it together with `ingress_cidrs`; the private
   runtime rejects a one-sided configuration and supplies no guessed default.
+  The English App translations repeat these labels and use placeholders only;
+  they do not supply a CIDR or origin.
 
 The token is not displayed after you save the App configuration. Keep a copy in your password manager.
 
