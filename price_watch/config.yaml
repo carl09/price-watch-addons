@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.1.30"
+version: "0.1.31"
 slug: "price_watch"
 # Candidate metadata only; not released or mapped to an immutable image digest.
 ingress: true
