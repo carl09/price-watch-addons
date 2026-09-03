@@ -1,6 +1,6 @@
 # Price Watch Home Assistant App
 
-> **Candidate metadata notice:** App metadata version `0.1.26` is an unreleased
+> **Candidate metadata notice:** App metadata version `0.1.29` is an unreleased
 > ingress/WebUI preparation candidate. This document is not an installation or
 > production-readiness approval. Wait for the matching immutable image and
 > completed ingress evidence.
@@ -23,6 +23,12 @@ This App runs the Price Watch service inside Home Assistant and stores its SQLit
   unavailable.
 - **Log level** — defaults to `info`. Use `debug` temporarily while diagnosing a connection or check failure; return it to `info` afterward.
 - **Lorna Jane contract shadow reporting** — disabled by default. Enable it only for a controlled evidence-gathering period. It compares the existing Lorna Jane result with a candidate contract and writes only safe match/mismatch outcome codes and totals to App logs; legacy monitoring remains authoritative. Disable it again after the review.
+- **Ingress CIDRs** — optional, target-specific comma-separated CIDR allowlist
+  for the immediate Home Assistant ingress proxy peer. Do not guess this value;
+  verify it on the target Supervisor/App network.
+- **Canonical origin** — optional, target-specific HTTP(S) origin trusted for
+  CSRF protection. Configure it together with `ingress_cidrs`; the private
+  runtime rejects a one-sided configuration and supplies no guessed default.
 
 The token is not displayed after you save the App configuration. Keep a copy in your password manager.
 
@@ -49,7 +55,9 @@ The integration validates the authenticated `/v1/health` endpoint during setup.
 The candidate metadata does not claim that ingress source CIDRs, path rewrite,
 `X-Ingress-Path`, canonical origin/CSRF handling, direct-port UI denial, or
 Supervisor/App restart behavior have been verified. Those facts require a
-separate disposable Home Assistant ingress proof before any release.
+separate disposable Home Assistant ingress proof before any release. The
+options remain unset until the target installation supplies its measured CIDR
+and trusted CSRF origin.
 
 ## Schedule a daily check
 

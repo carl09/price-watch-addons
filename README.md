@@ -3,7 +3,7 @@
 Home Assistant App (formerly add-on) repository for the self-hosted **Price Watch** service.
 
 > [!WARNING]
-> **Candidate metadata only:** `0.1.26` is an unreleased ingress/WebUI
+> **Candidate metadata only:** `0.1.29` is an unreleased ingress/WebUI
 > preparation candidate. Do not install it until the matching private service
 > artifact is published, its immutable image digest is recorded, and the
 > disposable Home Assistant ingress proof passes. This repository does not
@@ -19,7 +19,7 @@ Home Assistant App (formerly add-on) repository for the self-hosted **Price Watc
    https://github.com/carl09/price-watch-addons
    ```
 
-4. Refresh the App Store, select **Price Watch**, configure a long random API token, and start it. The `0.1.26` metadata in this checkout is a candidate and is not an installable release.
+4. Refresh the App Store, select **Price Watch**, configure a long random API token, and start it. The `0.1.29` metadata in this checkout is a candidate and is not an installable release.
 5. Add the [Price Watch HACS integration](https://github.com/carl09/price-watch-integration), then configure it with the same API token and the Home Assistant host/IP on port `8787` for the retained legacy `/v1` API contract. Existing integrations do not use the embedded WebUI ingress session.
 
 ## Candidate ingress/WebUI metadata
@@ -37,6 +37,10 @@ removed so it cannot diverge from `ingress_port` or the retained legacy API
 mapping. The declared port remains available for legacy bearer-authenticated
 `/v1` clients, so this metadata does not remove or migrate existing
 integration/card consumers.
+
+The target-specific `ingress_cidrs` and `canonical_origin` options must remain
+unset until the Supervisor proxy CIDR and trusted CSRF origin are verified on
+the target installation.
 
 This handoff is schema-shaped metadata, not runtime evidence. The actual
 Supervisor source CIDRs, rewrite, `X-Ingress-Path`, canonical external origin,

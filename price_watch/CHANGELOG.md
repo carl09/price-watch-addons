@@ -1,3 +1,14 @@
+## 0.1.29 (candidate — not released)
+
+- Add explicit target-specific `ingress_cidrs` and `canonical_origin` App
+  options for the private runtime's fail-closed ingress and CSRF trust
+  configuration. No CIDR or origin defaults are supplied.
+- Retain Supervisor ingress on fixed port `8787`; no unverified `webui` field
+  or launch URL is declared.
+- No immutable image digest, publication, deployment, or production-readiness
+  claim is included; target ingress, rewrite, CSRF, direct-port, and restart
+  behavior remain subject to disposable-installation proof.
+
 ## 0.1.26 (candidate — not released)
 
 - Prepare schema-shaped Home Assistant Supervisor ingress metadata for the

@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.1.28"
+version: "0.1.29"
 slug: "price_watch"
 # Candidate metadata only; not released or mapped to an immutable image digest.
 ingress: true
@@ -21,7 +21,11 @@ options:
   api_token: null
   log_level: info
   lorna_jane_shadow_enabled: false
+  ingress_cidrs: null
+  canonical_origin: null
 schema:
   api_token: password
   log_level: list(trace|debug|info|warn|error)
   lorna_jane_shadow_enabled: bool
+  ingress_cidrs: str?
+  canonical_origin: str?
