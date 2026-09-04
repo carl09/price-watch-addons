@@ -1,3 +1,8 @@
+## 0.1.38
+
+- Improve shopping list mutation idempotency handling, including durable coordination, legacy-response compatibility, and migration/test coverage.
+- Document implementation status and validation details for the release.
+
 ## 0.1.37
 
 - Add a service-owned shopping list with persistent storage, CRUD API endpoints, and an embedded WebUI.
