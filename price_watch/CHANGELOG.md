@@ -1,3 +1,7 @@
+## 0.1.39
+
+- Harden embedded WebUI response decoding and pagination handling, with expanded client, routing, and App image packaging regression coverage.
+
 ## 0.1.38
 
 - Improve shopping list mutation idempotency handling, including durable coordination, legacy-response compatibility, and migration/test coverage.
