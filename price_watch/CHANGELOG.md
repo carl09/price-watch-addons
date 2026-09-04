@@ -1,3 +1,7 @@
+## 0.1.37
+
+- Add a service-owned shopping list with persistent storage, CRUD API endpoints, and an embedded WebUI.
+
 ## 0.1.35
 
 - Add regression coverage for image-retry availability based on source and capability-token inputs.
