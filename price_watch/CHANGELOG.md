@@ -1,3 +1,7 @@
+## 0.1.35
+
+- Add regression coverage for image-retry availability based on source and capability-token inputs.
+
 ## 0.1.30 (candidate — not released)
 
 - Add English Home Assistant App option names and descriptions for all
