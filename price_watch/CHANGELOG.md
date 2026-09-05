@@ -1,3 +1,8 @@
+## 0.1.41
+
+- Improve Shopify product URL handling and alternate contract selection across supported retailers.
+- Enhance watch creation, preview validation, image handling, and WebUI controls with expanded regression coverage.
+
 ## 0.1.40
 
 - Add watch preview and from-URL creation flows with API validation, idempotency handling, and expanded WebUI regression coverage.
