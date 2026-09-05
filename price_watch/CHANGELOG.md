@@ -1,3 +1,7 @@
+## 0.1.42
+
+- Use a shared idempotency-key generator across WebUI mutations, with browser-crypto fallbacks for consistent retry behavior.
+
 ## 0.1.41
 
 - Improve Shopify product URL handling and alternate contract selection across supported retailers.
