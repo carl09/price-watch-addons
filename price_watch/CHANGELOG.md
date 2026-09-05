@@ -1,3 +1,8 @@
+## 0.1.40
+
+- Add watch preview and from-URL creation flows with API validation, idempotency handling, and expanded WebUI regression coverage.
+- Replace the obsolete OpenAPI route inventory with the current `/v1` API contract references.
+
 ## 0.1.39
 
 - Harden embedded WebUI response decoding and pagination handling, with expanded client, routing, and App image packaging regression coverage.
