@@ -1,3 +1,7 @@
+## 0.1.47
+
+- Isolate PI worker credentials in memory so containerized workers do not write authentication state to the container home.
+
 ## 0.1.46
 
 - Use environment-resolved credentials for the PI worker without mutating local SDK authentication state in the container.
