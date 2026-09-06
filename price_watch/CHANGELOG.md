@@ -1,3 +1,8 @@
+## 0.1.43
+
+- Add generic Shopify and browser-fallback acquisition paths for broader product preview and checking capabilities.
+- Reconcile App runtime configuration, restore product-image handling, and remove obsolete retailer-onboarding proof paths.
+
 ## 0.1.42
 
 - Use a shared idempotency-key generator across WebUI mutations, with browser-crypto fallbacks for consistent retry behavior.
