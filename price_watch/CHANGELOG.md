@@ -1,3 +1,7 @@
+## 0.1.45
+
+- Speed up amd64 App image builds with build caching and improve PI worker diagnostics and Azure configuration validation.
+
 ## 0.1.44
 
 - Configure the Azure OpenAI base URL for the PI worker and expose safer product-preview failure diagnostics.
