@@ -1,3 +1,7 @@
+## 0.1.46
+
+- Use environment-resolved credentials for the PI worker without mutating local SDK authentication state in the container.
+
 ## 0.1.45
 
 - Speed up amd64 App image builds with build caching and improve PI worker diagnostics and Azure configuration validation.
