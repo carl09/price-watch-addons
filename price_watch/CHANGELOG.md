@@ -1,3 +1,7 @@
+## 0.1.44
+
+- Configure the Azure OpenAI base URL for the PI worker and expose safer product-preview failure diagnostics.
+
 ## 0.1.43
 
 - Add generic Shopify and browser-fallback acquisition paths for broader product preview and checking capabilities.
