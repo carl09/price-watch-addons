@@ -19,12 +19,16 @@ ports_description:
   8787/tcp: "Price Watch API"
 options:
   log_level: info
+  ingress_cidrs: null
+  canonical_origin: null
   cdp_endpoint: null
   pi_worker_model_id: null
   pi_worker_max_tokens: 1024
   azure_openai_api_key: null
 schema:
   log_level: list(trace|debug|info|warn|error)
+  ingress_cidrs: str?
+  canonical_origin: str?
   cdp_endpoint: str?
   pi_worker_model_id: str?
   pi_worker_max_tokens: int
