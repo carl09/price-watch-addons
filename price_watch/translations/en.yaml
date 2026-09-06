@@ -1,14 +1,16 @@
 configuration:
-  api_token:
-    name: API token
-    description: Token used by retained legacy API clients to authenticate with Price Watch.
   log_level:
     name: Log level
     description: Logging detail for the App. Use debug only while diagnosing a problem, then return to info.
-    description: Enable bounded diagnostic comparison for Lorna Jane. Leave disabled during normal operation.
-  ingress_cidrs:
-    name: Verified ingress proxy CIDRs
-    description: Comma-separated CIDRs for the immediate verified Home Assistant ingress proxy, for example <verified-proxy-CIDR>. Leave unset until measured on this installation.
-  canonical_origin:
-    name: Trusted CSRF origin
-    description: HTTP(S) origin trusted for CSRF checks, for example https://<your-home-assistant-host>. Set together with verified ingress proxy CIDRs; do not guess this value.
+  cdp_endpoint:
+    name: CDP browser endpoint
+    description: Credential-free HTTP(S) CDP endpoint used for unsupported product URLs.
+  pi_worker_model_id:
+    name: PI worker model
+    description: Model identifier for browser product evidence.
+  pi_worker_max_tokens:
+    name: PI worker maximum tokens
+    description: Maximum response tokens for the bounded product-evidence worker.
+  azure_openai_api_key:
+    name: Azure OpenAI API key
+    description: Optional provider key used by the configured PI worker.

@@ -18,12 +18,30 @@ ports:
 ports_description:
   8787/tcp: "Price Watch API"
 options:
-  api_token: null
   log_level: info
-  ingress_cidrs: null
-  canonical_origin: null
+  cdp_endpoint: null
+  pi_worker_model_id: null
+  pi_worker_max_tokens: 1024
+  azure_openai_api_key: null
 schema:
-  api_token: password
   log_level: list(trace|debug|info|warn|error)
-  ingress_cidrs: str?
-  canonical_origin: str?
+  cdp_endpoint: str?
+  pi_worker_model_id: str?
+  pi_worker_max_tokens: int
+  azure_openai_api_key: password?
+configuration:
+  log_level:
+    name: Log level
+    description: Logging detail for the App. Use debug only while diagnosing a problem, then return to info.
+  cdp_endpoint:
+    name: CDP browser endpoint
+    description: Credential-free HTTP(S) CDP endpoint used for unsupported product URLs. Keep it on the trusted private LAN or use an SSH tunnel.
+  pi_worker_model_id:
+    name: PI worker model
+    description: Model identifier for browser product evidence, for example azure-openai-responses/gpt-5.6-luna. Leave unset to disable the browser fallback.
+  pi_worker_max_tokens:
+    name: PI worker maximum tokens
+    description: Maximum response tokens for the bounded product-evidence worker.
+  azure_openai_api_key:
+    name: Azure OpenAI API key
+    description: Optional provider key used by the configured PI worker. Store this as a secret.
