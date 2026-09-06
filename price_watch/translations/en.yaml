@@ -5,8 +5,6 @@ configuration:
   log_level:
     name: Log level
     description: Logging detail for the App. Use debug only while diagnosing a problem, then return to info.
-  lorna_jane_shadow_enabled:
-    name: Lorna Jane shadow comparison
     description: Enable bounded diagnostic comparison for Lorna Jane. Leave disabled during normal operation.
   ingress_cidrs:
     name: Verified ingress proxy CIDRs
