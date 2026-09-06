@@ -20,3 +20,6 @@ configuration:
   azure_openai_api_key:
     name: Azure OpenAI API key
     description: Optional provider key used by the configured PI worker.
+  azure_openai_base_url:
+    name: Azure OpenAI base URL
+    description: Azure OpenAI resource endpoint required by the configured PI worker.
