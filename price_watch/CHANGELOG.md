@@ -1,3 +1,7 @@
+## 0.1.48
+
+- Add product image galleries with cached gallery data, image selection, and watch-detail history chart support.
+
 ## 0.1.47
 
 - Isolate PI worker credentials in memory so containerized workers do not write authentication state to the container home.
