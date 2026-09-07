@@ -1,3 +1,9 @@
+## 0.2.0
+
+- Add browser-fallback preview and product-image extraction improvements.
+- Add PI browser policy validation and CDP host integration.
+- Improve PI logging and retailer onboarding workflows.
+
 ## 0.1.48
 
 - Add product image galleries with cached gallery data, image selection, and watch-detail history chart support.
