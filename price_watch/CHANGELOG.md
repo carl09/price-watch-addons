@@ -1,3 +1,8 @@
+## 0.2.1
+
+- Refactor ingress routing, static WebUI serving, and PI log routes into dedicated modules.
+- Remove obsolete retailer replay modules and tests.
+
 ## 0.2.0
 
 - Add browser-fallback preview and product-image extraction improvements.
