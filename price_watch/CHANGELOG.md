@@ -1,3 +1,9 @@
+## 0.2.2
+
+- Add Shopify promotion detection and pricing normalization.
+- Add theme configuration and styled Create Watch and Overview views.
+- Add task-planner settings and related WebUI improvements.
+
 ## 0.2.1
 
 - Refactor ingress routing, static WebUI serving, and PI log routes into dedicated modules.
