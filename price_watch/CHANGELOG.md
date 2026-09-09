@@ -1,3 +1,7 @@
+## 0.2.3
+
+- Align App metadata for the 0.2.3 release; no service changes since 0.2.2.
+
 ## 0.2.2
 
 - Add Shopify promotion detection and pricing normalization.
