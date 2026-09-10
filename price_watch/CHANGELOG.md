@@ -1,3 +1,7 @@
+## 0.2.4
+
+- Fix Overview filtering and deterministic watch ordering, with improved health metrics and regression coverage.
+
 ## 0.2.3
 
 - Align App metadata for the 0.2.3 release; no service changes since 0.2.2.
