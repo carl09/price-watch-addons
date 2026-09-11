@@ -1,3 +1,7 @@
+## 0.2.5
+
+- Improve product-image gallery caching diagnostics and capability-token validation, with per-image outcomes and regression coverage.
+
 ## 0.2.4
 
 - Fix Overview filtering and deterministic watch ordering, with improved health metrics and regression coverage.
