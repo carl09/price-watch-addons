@@ -1,3 +1,7 @@
+## 0.2.6
+
+- Add watch-tagging API documentation and improve image-gallery diagnostics and validation coverage.
+
 ## 0.2.5
 
 - Improve product-image gallery caching diagnostics and capability-token validation, with per-image outcomes and regression coverage.
