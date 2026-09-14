@@ -1,3 +1,7 @@
+## 0.2.7
+
+- Add watch-tag management and filtering across the service and embedded WebUI, with compatibility and regression coverage.
+
 ## 0.2.6
 
 - Add watch-tagging API documentation and improve image-gallery diagnostics and validation coverage.
