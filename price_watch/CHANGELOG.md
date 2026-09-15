@@ -1,3 +1,7 @@
+## 0.2.9
+
+- Improve tag suggestions, saving behavior, and Watch Detail tag display.
+
 ## 0.2.8
 
 - Improve watch-tag editing and accessibility behavior with expanded UI regression coverage.
