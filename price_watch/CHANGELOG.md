@@ -1,3 +1,7 @@
+## 0.2.10
+
+- Enable ephemeral PI Runs trace capture when the browser fallback is configured.
+
 ## 0.2.9
 
 - Improve tag suggestions, saving behavior, and Watch Detail tag display.
