@@ -1,3 +1,7 @@
+## 0.2.11
+
+- Accept optional tags during watch creation and correct ingress-relative gallery image URLs.
+
 ## 0.2.10
 
 - Enable ephemeral PI Runs trace capture when the browser fallback is configured.
