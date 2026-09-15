@@ -1,3 +1,7 @@
+## 0.2.8
+
+- Improve watch-tag editing and accessibility behavior with expanded UI regression coverage.
+
 ## 0.2.7
 
 - Add watch-tag management and filtering across the service and embedded WebUI, with compatibility and regression coverage.
