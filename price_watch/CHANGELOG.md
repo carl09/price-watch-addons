@@ -1,3 +1,7 @@
+## 0.2.15
+
+- Add Playwright CDP research documentation covering bulk action discovery, locators, and accessibility snapshots.
+
 ## 0.2.14
 
 - Improve Playwright action discovery with bounded candidate collection and evaluation coverage.
