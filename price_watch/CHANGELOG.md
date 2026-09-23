@@ -1,3 +1,7 @@
+## 0.2.16
+
+- Improve browser-fallback failure diagnostics and recipe validation with specific error traceability.
+
 ## 0.2.15
 
 - Add Playwright CDP research documentation covering bulk action discovery, locators, and accessibility snapshots.
