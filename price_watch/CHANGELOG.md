@@ -1,3 +1,7 @@
+## 0.2.13
+
+- Increase PI v2 timeout resilience with configurable bounds and a longer default budget.
+
 ## 0.2.12
 
 - Add PI run IDs and failure traceability across browser fallback acquisition, observations, and the PI Logs UI.
