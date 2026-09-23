@@ -1,3 +1,7 @@
+## 0.2.12
+
+- Add PI run IDs and failure traceability across browser fallback acquisition, observations, and the PI Logs UI.
+
 ## 0.2.11
 
 - Accept optional tags during watch creation and correct ingress-relative gallery image URLs.
