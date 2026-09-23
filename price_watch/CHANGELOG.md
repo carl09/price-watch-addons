@@ -1,3 +1,7 @@
+## 0.2.14
+
+- Improve Playwright action discovery with bounded candidate collection and evaluation coverage.
+
 ## 0.2.13
 
 - Increase PI v2 timeout resilience with configurable bounds and a longer default budget.
