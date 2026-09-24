@@ -1,3 +1,7 @@
+## 0.2.17
+
+- Improve image caching for previously accepted hosts and media/CDN subdomains.
+
 ## 0.2.16
 
 - Improve browser-fallback failure diagnostics and recipe validation with specific error traceability.
