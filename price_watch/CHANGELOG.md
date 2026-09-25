@@ -1,3 +1,7 @@
+## 0.2.18
+
+- Normalize browser-fallback canonical URLs by removing known tracking parameters.
+
 ## 0.2.17
 
 - Improve image caching for previously accepted hosts and media/CDN subdomains.
