@@ -1,3 +1,7 @@
+## 0.2.19
+
+- Add Adobe/Omniture campaign parameters to browser-fallback tracking URL normalization.
+
 ## 0.2.18
 
 - Normalize browser-fallback canonical URLs by removing known tracking parameters.
