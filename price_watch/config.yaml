@@ -1,7 +1,7 @@
 name: "Price Watch"
-version: "0.2.19"
+version: "0.2.20"
 slug: "price_watch"
-# Candidate metadata only; not released or mapped to an immutable image digest.
+# Image tags are published by the private service repository's release workflow.
 ingress: true
 # Supervisor proxies this port for the embedded WebUI.
 ingress_port: 8787

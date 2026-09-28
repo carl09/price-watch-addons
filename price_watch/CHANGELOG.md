@@ -1,3 +1,7 @@
+## 0.2.20
+
+- Add persistent selection of a cached retailer image as the product's main image, with an option to reset to the scraper default.
+
 ## 0.2.19
 
 - Add Adobe/Omniture campaign parameters to browser-fallback tracking URL normalization.
