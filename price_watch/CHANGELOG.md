@@ -1,3 +1,7 @@
+## 0.2.21
+
+- Add manual check-now controls to watch cards and the watch detail view.
+
 ## 0.2.20
 
 - Add persistent selection of a cached retailer image as the product's main image, with an option to reset to the scraper default.
