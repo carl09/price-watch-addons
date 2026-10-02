@@ -1,3 +1,8 @@
+## 0.2.22
+
+- Add persistence, API, and UI support for recording unsuccessful watch creation and retrying or recovering those attempts.
+- Expand Create Watch failure and recovery validation and regression coverage.
+
 ## 0.2.21
 
 - Add manual check-now controls to watch cards and the watch detail view.
