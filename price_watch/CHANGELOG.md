@@ -1,3 +1,7 @@
+## 0.2.23
+
+- Normalize PI v2 product URLs by removing only a Shopify variant selector that matches the validated retailer variant ID; reject mismatches.
+
 ## 0.2.22
 
 - Add persistence, API, and UI support for recording unsuccessful watch creation and retrying or recovering those attempts.
