@@ -1,3 +1,8 @@
+## 0.2.25
+
+- Add bounded, task-scoped browser inspection and interaction for PI v2 acquisition, including native product-option controls.
+- Verify the submitted product page and exact selection before accepting browser-acquired data.
+
 ## 0.2.24
 
 - Improve browser-fallback variant identity and selection, including exact requested-variant verification.
