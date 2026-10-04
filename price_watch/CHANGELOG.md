@@ -1,3 +1,8 @@
+## 0.2.24
+
+- Improve browser-fallback variant identity and selection, including exact requested-variant verification.
+- Preserve uncertain watch creation and retry requests for safe recovery; unknown availability no longer replaces known stock.
+
 ## 0.2.23
 
 - Normalize PI v2 product URLs by removing only a Shopify variant selector that matches the validated retailer variant ID; reject mismatches.
