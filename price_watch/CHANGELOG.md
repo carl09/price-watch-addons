@@ -1,3 +1,8 @@
+## 0.2.28
+
+- Improve exact browser option verification and recovery across native controls, verified sibling products and accessible labels.
+- Add bounded PI browser-read and product-save recovery with clearer selection diagnostics.
+
 ## 0.2.27
 
 - Improve PI browser selection verification with primary-product scoping, bounded diagnostics and interaction timing.
