@@ -1,3 +1,8 @@
+## 0.2.29
+
+- Stop stalled PI product-correction sessions after two settled rounds without novel host-observed progress following a stable rejection.
+- Report categorical no-progress failures while keeping transient or truncated evidence recoverable.
+
 ## 0.2.28
 
 - Improve exact browser option verification and recovery across native controls, verified sibling products and accessible labels.
