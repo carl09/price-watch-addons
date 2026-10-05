@@ -1,3 +1,9 @@
+## 0.2.27
+
+- Improve PI browser selection verification with primary-product scoping, bounded diagnostics and interaction timing.
+- Require verified same-origin canonical evidence for Shopify collection aliases; tighten exact-check evidence and discovery validation.
+- Preserve unknown availability after successful exact selection.
+
 ## 0.2.26
 
 - Upgrade PI SDK dependencies to 1.0.2 for the expanded Azure model catalogue and add compatibility coverage.
