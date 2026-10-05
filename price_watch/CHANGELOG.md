@@ -1,3 +1,8 @@
+## 0.2.26
+
+- Upgrade PI SDK dependencies to 1.0.2 for the expanded Azure model catalogue and add compatibility coverage.
+- Pin the minimatch brace-expansion dependency to 5.0.12.
+
 ## 0.2.25
 
 - Add bounded, task-scoped browser inspection and interaction for PI v2 acquisition, including native product-option controls.
