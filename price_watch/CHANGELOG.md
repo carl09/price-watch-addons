@@ -1,3 +1,8 @@
+## 0.2.34
+
+- Add bounded host-outcome badges to PI-run navigation, distinguishing failed, completed, and unknown outcomes without treating tool errors or SDK cleanup as run failures.
+- Improve diagnostic screenshots with a five-second capture deadline, CSS-pixel images with animations disabled, categorical availability reasons, and retryable screenshots in an automatically opened PI-run panel. Screenshot failures do not change acquisition outcomes.
+
 ## 0.2.33
 
 - Add bounded private diagnostic screenshots for PI checks, exposed through the trace endpoint and check UI.
