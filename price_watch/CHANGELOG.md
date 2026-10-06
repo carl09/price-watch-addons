@@ -1,3 +1,8 @@
+## 0.2.31
+
+- Add mode-aware PI V2 prompts for previews and scheduled checks; document GPT-6 prompting guidance and Shop Watch Luna identifiers.
+- Correct SKU-only browser-fallback identity handling, preserving requested kind, options and SKU without inventing option axes.
+
 ## 0.2.30
 
 - Reuse successful browser-fallback recipes only for matching products and requested variants, while requiring fresh selection verification and product data.
