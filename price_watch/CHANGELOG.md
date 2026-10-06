@@ -1,3 +1,9 @@
+## 0.2.32
+
+- Stop after two consecutive selection-read timeouts with a distinct verification-timeout failure; a non-timeout result resets the timeout count.
+- Batch native selection-name lookups and accept proof only from unique, valid snapshot references.
+- Treat bounded recipe steps as advisory text rather than rejecting by keywords; clarify disclosure handling and recipe constraints in PI V2 guidance.
+
 ## 0.2.31
 
 - Add mode-aware PI V2 prompts for previews and scheduled checks; document GPT-6 prompting guidance and Shop Watch Luna identifiers.
