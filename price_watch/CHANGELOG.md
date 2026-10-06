@@ -1,3 +1,8 @@
+## 0.2.30
+
+- Reuse successful browser-fallback recipes only for matching products and requested variants, while requiring fresh selection verification and product data.
+- Add bounded selection and recipe-step diagnostics, plus redacted PI traces with bounded storage and paginated retrieval.
+
 ## 0.2.29
 
 - Stop stalled PI product-correction sessions after two settled rounds without novel host-observed progress following a stable rejection.
