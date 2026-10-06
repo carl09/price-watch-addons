@@ -1,3 +1,8 @@
+## 0.2.33
+
+- Add bounded private diagnostic screenshots for PI checks, exposed through the trace endpoint and check UI.
+- Summarize PI traces in plain English and label unknown-stock checks as inconclusive while retaining the last confirmed result.
+
 ## 0.2.32
 
 - Stop after two consecutive selection-read timeouts with a distinct verification-timeout failure; a non-timeout result resets the timeout count.
