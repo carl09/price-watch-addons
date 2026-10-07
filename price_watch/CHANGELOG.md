@@ -1,3 +1,7 @@
+## 0.2.37
+
+- Strip known tracking parameters from product URLs and remove functional variant selectors from preview canonical URLs only when returned variant data confirms them; unrecognized query parameters and fragments remain rejected.
+
 ## 0.2.36
 
 - Ignore blank and literal `null` offer placeholders in advertised-offer handling and consistently omit those labels from event, history, watch-card, creation, and detail displays.
