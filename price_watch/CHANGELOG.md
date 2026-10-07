@@ -1,3 +1,9 @@
+## 0.2.35
+
+- Support explicitly advertised single-item offer prices and conditions, including compare-at prices and Lorna Jane promotion messages; do not treat quantity- or eligibility-dependent deals as individual prices.
+- Persist offer notes with current observations and history using a backward-compatible schema migration, and display the advertised conditions in the UI.
+- Remember Overview tile, tag, and Untagged filters for the tab session with validation and safe fallback when browser storage is unavailable.
+
 ## 0.2.34
 
 - Add bounded host-outcome badges to PI-run navigation, distinguishing failed, completed, and unknown outcomes without treating tool errors or SDK cleanup as run failures.
