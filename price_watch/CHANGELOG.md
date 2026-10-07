@@ -1,3 +1,8 @@
+## 0.2.36
+
+- Ignore blank and literal `null` offer placeholders in advertised-offer handling and consistently omit those labels from event, history, watch-card, creation, and detail displays.
+- Expand the Lorna Jane product image gallery while retaining its featured image as primary; normalize, deduplicate, filter and cap gallery entries at 12.
+
 ## 0.2.35
 
 - Support explicitly advertised single-item offer prices and conditions, including compare-at prices and Lorna Jane promotion messages; do not treat quantity- or eligibility-dependent deals as individual prices.
