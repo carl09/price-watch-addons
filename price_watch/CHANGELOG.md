@@ -1,3 +1,7 @@
+## 0.2.38
+
+- Add persistent per-approved-host names and icons for browser-fallback retailers, with API and UI management; these presentation profiles do not change host approval or acquisition behavior.
+
 ## 0.2.37
 
 - Strip known tracking parameters from product URLs and remove functional variant selectors from preview canonical URLs only when returned variant data confirms them; unrecognized query parameters and fragments remain rejected.
