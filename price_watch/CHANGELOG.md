@@ -1,3 +1,7 @@
+## 0.2.39
+
+- Add paste, drop, and browse support for browser-fallback host profile icons, sharing clipboard image detection with product and retailer image inputs.
+
 ## 0.2.38
 
 - Add persistent per-approved-host names and icons for browser-fallback retailers, with API and UI management; these presentation profiles do not change host approval or acquisition behavior.
