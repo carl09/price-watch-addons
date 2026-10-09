@@ -1,5 +1,5 @@
 name: "Price Watch"
-version: "0.2.39"
+version: "0.2.40"
 slug: "price_watch"
 # Image tags are published by the private service repository's release workflow.
 ingress: true

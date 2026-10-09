@@ -1,3 +1,7 @@
+## 0.2.40
+
+- Add a bundled local headless Chromium fallback when remote CDP setup fails or the initial document navigation returns HTTP 418.
+
 ## 0.2.39
 
 - Add paste, drop, and browse support for browser-fallback host profile icons, sharing clipboard image detection with product and retailer image inputs.
