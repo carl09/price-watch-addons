@@ -1,3 +1,7 @@
+## 0.2.41
+
+- Add product groups for multi-retailer watches, including grouped offers and product-group views in the API and UI.
+
 ## 0.2.40
 
 - Add a bundled local headless Chromium fallback when remote CDP setup fails or the initial document navigation returns HTTP 418.
