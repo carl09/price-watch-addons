@@ -1,3 +1,8 @@
+## 0.2.42
+
+- Add archive and restore controls for product groups and individual offers in the API and UI, retaining their history and suspending checks while archived; permanent offer deletion remains explicit.
+- Keep shared targets aligned for archived offers, exclude archived offers when recomputing target-alert qualification after deletion, and save archive/restore changes atomically with their idempotent replay responses.
+
 ## 0.2.41
 
 - Add product groups for multi-retailer watches, including grouped offers and product-group views in the API and UI.
