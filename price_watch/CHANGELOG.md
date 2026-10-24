@@ -1,3 +1,7 @@
+## 0.2.43
+
+- Fix grouped product-card checks to check all enabled, nonarchived offers sequentially, show individual outcomes, continue after retailer failures, and refresh product facts and stale status.
+
 ## 0.2.42
 
 - Add archive and restore controls for product groups and individual offers in the API and UI, retaining their history and suspending checks while archived; permanent offer deletion remains explicit.
