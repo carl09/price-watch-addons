@@ -1,3 +1,8 @@
+## 0.2.44
+
+- Improve browser option disambiguation with bounded match visibility, parent context, and node-specific locators for explicit selection; clarify control-inspection pagination while retaining action safeguards.
+- Reject new manual checks on paused watches with `409 watch_paused`, disable individual check buttons with an explanation, and preserve completed idempotent check replays after pausing.
+
 ## 0.2.43
 
 - Fix grouped product-card checks to check all enabled, nonarchived offers sequentially, show individual outcomes, continue after retailer failures, and refresh product facts and stale status.
